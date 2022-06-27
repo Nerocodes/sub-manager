@@ -4,19 +4,21 @@ import Logo from '@/components/Logo.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div>
+    <header>
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <Logo msg="Sub Manager" />
+      <div class="wrapper">
+        <Logo msg="Sub Manager" />
 
-      <nav>
-        <RouterLink to="/">Subscriptions</RouterLink>
-      </nav>
-    </div>
-  </header>
+        <nav>
+          <RouterLink to="/">Subscriptions</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </div> 
 </template>
 
 <style>
@@ -33,6 +35,7 @@ import Logo from '@/components/Logo.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  margin-bottom: 2rem;
 }
 
 .logo {
