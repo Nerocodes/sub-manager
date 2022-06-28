@@ -34,6 +34,15 @@ export const subscriptionStore = defineStore({
         const subscription = response.data.data
         this.subscription = subscription
       });
+    },
+
+    updateSubscriptionStatus(data) {
+      sendRequest('patch', `subscriptions/${data.id}`, { 
+        state: data.status 
+      }).then(response => {
+        const subscription = response.data.data
+        this.subscription = subscription
+      });
     }
   }
 })

@@ -26,22 +26,19 @@
 </template>
 
 <script>
-import { mapStores, mapState } from 'pinia'
+import { mapState } from 'pinia'
 import { subscriptionStore } from '@/stores/subscription'
 import { RouterLink } from 'vue-router'
 
 export default {
-data() {
-    return {
-        
-    }
+components: {
+    RouterLink
 },
 created() {
     const subStore = subscriptionStore()
     subStore.getAllSubscriptions()
 },
 computed: {
-    ...mapStores(subscriptionStore),
     ...mapState(subscriptionStore, {
         subscriptions: 'subscriptions',
         getSubscriptions: 'getSubscriptions'

@@ -56,7 +56,7 @@ a,
   justify-content: space-evenly;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], select {
   background-color: hsla(160, 100%, 37%, 0.2);
   color: white;
   border: 1px solid white;
@@ -70,6 +70,7 @@ button, input[type=submit] {
   padding: 0.5rem;
   margin: 1rem 0rem;
   color: hsla(160, 100%, 37%, 1);
+  cursor: pointer;
 }
 
 button:hover, input[type=submit]:hover {
@@ -84,6 +85,10 @@ table {
 td, th {
   border: 2px solid var(--color-border);
   padding: 0.5rem;
+}
+
+label, th {
+  text-transform: capitalize;
 }
 
 @media (hover: hover) {
