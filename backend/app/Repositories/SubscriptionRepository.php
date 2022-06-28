@@ -13,7 +13,9 @@ class SubscriptionRepository implements SubscriptionRepositoryInterface
             'email' => $data['email'],
             'name' => $data['name']
         ]);
-        $subscription->fields()->attach($data['fields']);
+        if(isset($data['fields']) && $data['fields']) {
+            $subscription->fields()->attach($data['fields']);
+        }
 
         return $subscription;
     }

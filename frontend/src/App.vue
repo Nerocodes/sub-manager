@@ -49,6 +49,33 @@ a,
   transition: 0.4s;
 }
 
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input[type=text], input[type=email] {
+  background-color: hsla(160, 100%, 37%, 0.2);
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+button, input[type=submit] {
+  border: 1px solid hsla(160, 100%, 37%, 1);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+  color: hsla(160, 100%, 37%, 1);
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: hsla(160, 100%, 37%, 1);
+  color: white;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

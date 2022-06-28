@@ -18,6 +18,12 @@ export const subscriptionStore = defineStore({
         console.log(subscriptions)
         this.subscriptions = subscriptions
       });
+    },
+
+    storeSubscription(data) {
+      sendRequest('post', 'subscriptions', data).then(response => {
+        this.getAllSubscriptions()
+      });
     }
   }
 })
