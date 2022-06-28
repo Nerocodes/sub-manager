@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Logo from '@/components/Logo.vue'
+import './assets/tailwind.css'
 </script>
 
 <template>
