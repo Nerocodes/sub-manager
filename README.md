@@ -35,7 +35,7 @@ You need to have or install the following:
     composer install
     ```
 - create a `.env` file with this template using the `.env.example` file
-- setup database and cofigure `.env`
+- setup database and configure `.env`
 - run migration
     ```
     php artisan migrate
