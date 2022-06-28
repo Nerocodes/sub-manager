@@ -10,6 +10,10 @@
                 <th>Email</th>
                 <td>{{ subscription.email }}</td>
             </tr>
+            <tr>
+                <th>State</th>
+                <td>{{ subscription.state }}</td>
+            </tr>
         </table>
     </div>
 </template>

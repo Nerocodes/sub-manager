@@ -8,6 +8,7 @@
                         <th>S/N</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>State</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -15,6 +16,7 @@
                         <td>{{ index + 1 }}</td>
                         <td>{{ subscription.name }}</td>
                         <td>{{ subscription.email }}</td>
+                        <td>{{ subscription.state }}</td>
                         <td><RouterLink :to="`/subscriptions/${subscription.id}`">View</RouterLink></td>
                     </tr>
                 </tbody>
