@@ -23,9 +23,8 @@
 </template>
 
 <script>
-import { mapStores, mapState } from 'pinia'
+import { mapState } from 'pinia'
 import { useFieldStore } from '@/stores/field'
-import { RouterLink } from 'vue-router'
 
 export default {
 data() {
