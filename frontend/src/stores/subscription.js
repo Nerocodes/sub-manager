@@ -24,7 +24,7 @@ export const subscriptionStore = defineStore({
     },
 
     storeSubscription(data) {
-      sendRequest('post', 'subscriptions', data).then(response => {
+      return sendRequest('post', 'subscriptions', data).then(response => {
         this.getAllSubscriptions()
       });
     },

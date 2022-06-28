@@ -1,5 +1,11 @@
 <template>
     <main>
+        <div v-if="Object.keys(error).length > 0">
+            <p class="bg-red-500">{{ error.message }}</p>
+            <div v-if="Object.keys(error.errors).length > 0">
+                <p class="bg-red-500" v-for="(err, index) in error.errors" :key="index">{{err[0]}}</p>
+            </div>
+        </div>
         <form action="" @submit="createSubscription">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -27,7 +33,8 @@ export default {
         return {
             name: '',
             email: '',
-            fieldValues: {}
+            fieldValues: {},
+            error: {},
         }
     },
     created() {
@@ -55,8 +62,11 @@ export default {
                 fieldData.push(format)
             }
             data['fields'] = fieldData
-            this.storeSubscription(data)
-            this.$router.push('/')
+            this.storeSubscription(data).then(res => {
+                this.$router.push('/')
+            }).catch(err => {
+                this.error = err.response.data
+            })
         }
     },
     computed: {
