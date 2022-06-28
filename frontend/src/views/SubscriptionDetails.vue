@@ -14,6 +14,10 @@
                 <th>State</th>
                 <td>{{ subscription.state }}</td>
             </tr>
+            <tr v-for="field in subscription.fields" :key="field.id">
+                <th>{{ field.title }}</th>
+                <td>{{ field.pivot.value }}</td>
+            </tr>
         </table>
     </div>
 </template>
