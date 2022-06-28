@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/fields',
+      name: 'fields',
+      component: () => import('../views/FieldView.vue')
+    },
+    {
       path: '/create-subscription',
       name: 'create subscription',
       component: () => import('../views/CreateSubscription.vue')

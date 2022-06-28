@@ -12,6 +12,7 @@ import './assets/tailwind.css'
 
         <nav>
           <RouterLink to="/">Subscriptions</RouterLink>
+          <RouterLink to="/fields">Fields</RouterLink>
         </nav>
       </div>
     </header>
