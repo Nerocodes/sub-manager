@@ -62,7 +62,8 @@ php artisan test
 | POST /subscriptions| Create subscription |
 | PATCH /subscriptions/:id | Update subscription status |
 | GET /subscriptions | Get all subscriptions |
-| GET  /subscriptions/:id |Get single subscription |
+| GET  /subscriptions/:id | Get single subscription |
+| GET  /fields | Get all fields |
 
 #### UI Installation
 - navigate to frontend folder
