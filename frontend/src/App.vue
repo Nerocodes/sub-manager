@@ -76,6 +76,15 @@ button:hover, input[type=submit]:hover {
   color: white;
 }
 
+table {
+  margin: 1rem 0rem;
+}
+
+td, th {
+  border: 2px solid var(--color-border);
+  padding: 0.5rem;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
