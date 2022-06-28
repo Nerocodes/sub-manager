@@ -36,6 +36,14 @@ You need to have or install the following:
     ```
 - create a `.env` file with this template using the `.env.example` file
 - setup database and cofigure `.env`
+- run migration
+    ```
+    php artisan migrate
+    ```
+- run seeder
+    ```
+    php artisan db:seed --class=FieldSeeder
+    ```
 - start app
     ```
     php artisan start
