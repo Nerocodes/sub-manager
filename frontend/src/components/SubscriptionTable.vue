@@ -15,6 +15,7 @@
                         <td>{{ index + 1 }}</td>
                         <td>{{ subscription.name }}</td>
                         <td>{{ subscription.email }}</td>
+                        <td><RouterLink :to="`/subscriptions/${subscription.id}`">View</RouterLink></td>
                     </tr>
                 </tbody>
             </table>
@@ -25,6 +26,7 @@
 <script>
 import { mapStores, mapState } from 'pinia'
 import { subscriptionStore } from '@/stores/subscription'
+import { RouterLink } from 'vue-router'
 
 export default {
 data() {

@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/create-subscription',
       name: 'create subscription',
       component: () => import('../views/CreateSubscription.vue')
+    },
+    {
+      path: '/subscriptions/:id',
+      name: 'view subscription',
+      component: () => import('../views/SubscriptionDetails.vue')
     }
   ]
 })
