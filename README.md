@@ -1,6 +1,6 @@
 # sub-manager
 
-Sub manager is a simple application that manages subsribers
+Sub manager is a simple application that manages subscribers
 
 ## Built With
 - Laravel
